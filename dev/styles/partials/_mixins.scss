@@ -1,0 +1,28 @@
+@mixin navText ($line-height, $font-weight) {
+	font-family: $bodyFont;
+	text-transform: uppercase;
+	font-size: 1.4rem;
+	letter-spacing: 0.3rem;
+	line-height: $line-height;
+	font-weight: $font-weight;
+	color: $mainTextColour;
+}
+
+@mixin headingText ($font-size) {
+	font-family: $bodyFont;
+	text-transform: uppercase;
+	font-size: $font-size;
+	letter-spacing: 0.3rem;
+	line-height: 1.9rem;
+	font-weight: 800;
+	color: $mainTextColour;
+}
+
+@mixin bodyText {
+	font-family: $bodyFont;
+	font-size: 1.4rem;
+	// letter-spacing: 0.3rem;
+	line-height: 2.3rem;
+	font-weight: 300;
+	color: $mainTextColour;
+}

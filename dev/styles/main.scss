@@ -1,6 +1,112 @@
-@import 'setup';
+@import 'partials/setup';
+@import 'partials/variables';
+@import 'partials/mixins';
+@import 'partials/global';
+@import 'partials/navigation';
 
-.container {
-	max-width: 900px;
-	margin: 0 auto;
+
+// HEADER ****
+
+header {
+	height: 100vh;
+	.title {
+		margin: 0 auto;
+		p {
+			margin: 0 auto;
+			text-align: center;
+		}
+	}
+	.heroContainer {
+		height: 60vh;
+		justify-content: center;
+		align-items: center;
+		background: linear-gradient(to bottom right, #FFEFE8 50%, #E2EEFF 50%);
+		margin-top: 10.1rem;
+		.heroText {
+			// font-family: "Conqueror";
+			font-family: "Gilda-Display", serif;
+			font-weight: 300;
+			font-size: 3rem;
+			// font-style: italic;
+			padding: 12rem;
+		}
+	}
+	.leftPanel p, .rightPanel p {
+		padding: 0 10px;
+		position: fixed;
+		top: 48vh;
+		text-align: center;
+		z-index: 10;
+		@include navText (1.2rem, 800);
+		}
+	.leftPanel p {
+		transform: rotate(-90deg);
+		left: 2%;
+	}
+	.rightPanel p {
+		transform: rotate(90deg);
+		right: 2%;
+	}
 }
+
+
+
+
+// ABOUT ****
+
+#about {
+	margin-bottom: 5.5rem;
+	.bioContainer {
+		justify-content: space-between;
+		.bioText, .bioPhoto {
+			width: calc(50% - 5rem);
+		}
+		.bioPhoto img {
+			width: 100%;
+		}
+		.bioText {
+			margin-right: 5rem;
+			@include bodyText;
+			span {
+				font-size: 2rem;
+			}
+		}
+	}
+}
+
+
+// WORK ****
+
+#work {
+	.galleryContainer {
+		position: relative;
+		height: 65vh;
+		.galleryItem {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+		.memoryFlip {
+			background: #E6E9Ef;
+		}
+	}
+	.galleryScroll {
+		justify-content: space-between;
+			.leftScroller, .rightScroller {
+				padding: 2rem;
+				font-size: 1.8rem;
+			}
+	}
+}
+
+
+
+
+
+// @font-face {
+//     font-family: GraublauWeb;
+//     font-weight: bold;
+//     src: url("path/GraublauWebBold.otf") format("opentype");
+// }

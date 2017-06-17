@@ -17,10 +17,11 @@ gulp.task('styles', () => {
     .pipe(sass().on('error', sass.logError))
     .pipe(concat('style.css'))
     .pipe(gulp.dest('./public/styles/'))
+    .pipe(reload({stream: true}))
 });
 
 gulp.task("scripts", () => {
-	return gulp.scr("./dev/scripts/main.js")
+	return gulp.src("./dev/scripts/**/*.js")
 	.pipe(babel({
 		presets: ["es2015"]
 	}))
@@ -30,7 +31,7 @@ gulp.task("scripts", () => {
 
 gulp.task("watch", () => {
 	gulp.watch("./dev/styles/**/*.scss", ["styles"]);
-	gulp.watch("./dev/scripts/main.js", ["scripts"]);
+	gulp.watch("./dev/scripts/**/*.js", ["scripts"]);
 	gulp.watch("*.html", reload);
 });
 
