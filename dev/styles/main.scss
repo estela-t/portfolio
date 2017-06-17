@@ -2,58 +2,13 @@
 @import 'partials/variables';
 @import 'partials/mixins';
 @import 'partials/global';
+@import 'partials/header';
 @import 'partials/navigation';
-
-
-// HEADER ****
-
-header {
-	height: 100vh;
-	.title {
-		margin: 0 auto;
-		p {
-			margin: 0 auto;
-			text-align: center;
-		}
-	}
-	.heroContainer {
-		height: 65vh;
-		justify-content: center;
-		align-items: center;
-		background: linear-gradient(to bottom right, #FFEFE8 50%, #E2EEFF 50%);
-		margin-top: 10.1rem;
-		.heroText {
-			// font-family: "Conqueror";
-			font-family: "Gilda Display", serif;
-			font-weight: 300;
-			font-size: 3rem;
-			// font-style: italic;
-			padding: 12rem;
-		}
-	}
-	.leftPanel p, .rightPanel p {
-		padding: 0 1rem;
-		position: fixed;
-		top: 48vh;
-		text-align: center;
-		z-index: 10;
-		@include navText (1.2rem, 800);
-		}
-	.leftPanel p {
-		transform: rotate(-90deg);
-		left: -1%;
-	}
-	.rightPanel p {
-		transform: rotate(90deg);
-		right: -1%;
-	}
-}
 
 
 
 
 // ABOUT ****
-
 #about {
 	margin-bottom: 5.5rem;
 	.bioContainer {
@@ -76,7 +31,6 @@ header {
 
 
 // WORK ****
-
 #work {
 	.galleryContainer {
 		position: relative;
@@ -108,8 +62,8 @@ header {
 		.galleryImage_container {
 			max-width: 35%;
 			align-self: center;
-			// position: absolute;
-			// top: 15%;
+			position: absolute;
+			top: 15%;
 			img {
 				max-width: 100%;
 			}
@@ -128,7 +82,6 @@ header {
 					border: 3px solid white;
 					text-shadow: 1px 2px 0 $mainTextColour;
 				}
-
 			}
 		}
 		.memoryFlip {
@@ -144,14 +97,15 @@ header {
 	}
 }
 
-
-.difinity, .councilMeet, .podChill {
+.hidden {
 	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s linear 0.3s, opacity 0.3s;
 }
 
 
-// @font-face {
-//     font-family: GraublauWeb;
-//     font-weight: bold;
-//     src: url("path/GraublauWebBold.otf") format("opentype");
+
+// .difinity, .councilMeet, .podChill {
+// 	visibility: hidden;
 // }
+
