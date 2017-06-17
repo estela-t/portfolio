@@ -26,3 +26,13 @@
 	font-weight: 300;
 	color: $mainTextColour;
 }
+
+@mixin buttonStyle ($color, $border){
+	font-family: $bodyFont;
+	// text-transform: uppercase;
+	font-weight: 800;
+	letter-spacing: 0.2rem;
+	font-size: 1.4rem;
+	color: $color;
+	border: $border;
+}

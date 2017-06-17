@@ -11,18 +11,13 @@ body {
 }
 
 .wrapper {
-	width: 85%;
+	width: 90%;
 	margin: 0 auto;
 }
 
 .flexContainer {
 	display: flex;
 	flex-wrap: wrap;
-}
-
-@font-face {
-	font-family: "Conqueror";
-	src: url("/AWConquerorStdDidot.woff") format("opentype");
 }
 
 h2 {
@@ -39,6 +34,5 @@ h2 {
 		position: absolute;
 		top: 50%;
 		left: 30%;
-
 	}
 }
