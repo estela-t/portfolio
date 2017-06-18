@@ -58,6 +58,9 @@ $(function(){
 	  }
 	});
 
+	// reveal headers on scroll
+	new WOW().init();
+
 
 
 

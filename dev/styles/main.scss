@@ -34,7 +34,7 @@
 
 #contact {
 	margin-top: 10rem;
-	.footerColumn {
+	.contactColumn {
 		width: 50%;
 		float: left;
 		padding: 10rem;
@@ -43,43 +43,83 @@
 				padding: 1rem;
 				transition: all 0.3s ease;
 				&:hover .fa {
-					color: red;
+					color: #E2EEFF;
+					// #FFEFE8;
 				}
 			}
 			.fa {
-				font-size: 2.4rem;
+				font-size: 3rem;
 				color: $mainTextColour;
 			}
-
+		}
+	}
+	.contactColumnLeft {
+		p:not(.contactCallout), a {
+			@include bodyText
+			font-size: 1.6rem;
+		}
+		.contactCallout {
+			@include headingText (1.8rem);
+			margin-bottom: 3rem;
+		}
+		.contactEmail .fa {
+			padding-right: 0.5rem;
+		}
+		.contactEmail a {
+			transition: all 0.3s ease;
+			letter-spacing: 0.1rem;
+			transition: all 0.3s ease;
+			&:hover {
+				color: #E2EEFF;
+			}
 		}
 	}
 	.formContainer {
 		background: #E2EEFF;
+		p {
+			@include headingText (1.8rem);
+			margin-bottom: 4rem;
+		}
 	}
 
 form {
 	flex-direction: column;
 	justify-content: space-around;
-	width: 80%;
+	width: 90%;
 	input:not(.submit), textarea {
 		width: 100%;
 		background: #E2EEFF;
 		border: none;
 		border-bottom: 3px solid $mainTextColour;
 		margin: 1rem 0;
-		padding: 1rem 0;
+		padding: 1.2rem 0;
 		&::placeholder {
 			font-family: $bodyFont;
 			font-size: 1.4rem;
 			color: $mainTextColour;
+			line-height: 1rem;
+			padding: 0.3rem;
 			}
+		&:focus {
+			outline: none;
+			border: 3px solid $mainTextColour;
 		}
+	}
 		textarea {
 			resize: none;
 		}
-
+		.submit {
+			width: 50%;
+			@include buttonStyle ($mainTextColour, 3px solid $mainTextColour);
+			padding: 1.5rem;
+			background: #E2EEFF;
+			margin-top: 3rem;
+			transition: all 0.3s ease;
+			&:hover {
+				background: white;
+			}
+		}
 	}
-
 	.visuallyHidden {
 		position: absolute;
 		clip: rect(1px 1px 1px 1px); 
@@ -96,8 +136,9 @@ form {
 //FOOTER ****
 
 footer {
-	text-align: center;
+	justify-content: center;
+	align-items: center;
 	@include navText (1.9rem, 500);
-	height: 5rem;
+	height: 10rem;
 }
 

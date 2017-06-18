@@ -1,15 +1,15 @@
 // NAV ****
 
 nav {
-	width: 65%;
+	width: 90%;
 	// visibility: hidden;
 	background: white;
 	position: fixed;
-	// top: 10.1rem;
 	z-index: 5;
 	margin: 0 auto;
 	height: 10.1rem;
 	align-items: center;
+	justify-content: center;
 	ul {
 		flex: 1;
 		list-style: none;
@@ -17,6 +17,7 @@ nav {
 		margin: 0;
 		li {
 			flex: 1;
+			text-align: center;
 			a {
 				@include navText (1.2rem, 500);
 				&:hover {
