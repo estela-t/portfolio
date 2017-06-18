@@ -18,7 +18,6 @@ nav {
 		li {
 			flex: 1;
 			a {
-				text-decoration: none;
 				@include navText (1.2rem, 500);
 				&:hover {
 					background: linear-gradient($mainTextColour 0%, $mainTextColour 100%);

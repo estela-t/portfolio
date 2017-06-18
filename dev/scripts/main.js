@@ -1,10 +1,9 @@
 
 $(function(){
 	// portfolio scroller
-	var panels = [".memoryFlip", ".difinity", ".podChill", ".councilMeet"];
+	var panels = [".memoryFlip", ".podChill", ".difinity", ".councilMeet"];
 	var currentPanel = 0;
 	var numOfPanels = panels.length;
-	console.log(numOfPanels);
 
 	function updatePanel(direction) {
 		$(panels[currentPanel]).toggleClass("hidden");
@@ -16,23 +15,16 @@ $(function(){
 		} 
 		// show the next/previous panel
 		$(panels[currentPanel]).toggleClass("hidden");
-
-		// check to see if user is at the last panel 
-		// if they are, go back to the beginning of the array
-		// if (currentPanel === numOfPanels - 1) {
-		// 	currentPanel === panels[0];
-		// }
 	}
 
 	$(".rightScroller").on("click", function () {
 		updatePanel("next");
+		// check to see if user is at the last panel 
+		// if they are, go back to the beginning of the array
 		if (currentPanel === numOfPanels){
 			currentPanel = 0;
 			$(panels[currentPanel]).toggleClass("hidden");
 		}
-
-		console.log(currentPanel);
-		console.log(panels);
 	});
 
 	$(".leftScroller").on("click", function () {
@@ -40,7 +32,6 @@ $(function(){
 			currentPanel = currentPanel - 1;
 		}
 		updatePanel("previous");
-		console.log(currentPanel);
 	});
 
 	// display nav items on scroll
@@ -53,6 +44,19 @@ $(function(){
 	});
 
 });
+	// smooth scroll on anchor tags
+	$('a[href*="#"]:not([href="#"])').click(function() {
+	  if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+	    var target = $(this.hash);
+	    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	    if (target.length) {
+	      $('html, body').animate({
+	        scrollTop: target.offset().top
+	      }, 1000);
+	      return false;
+	    }
+	  }
+	});
 
 
 

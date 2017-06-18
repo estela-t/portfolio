@@ -4,13 +4,14 @@
 @import 'partials/global';
 @import 'partials/header';
 @import 'partials/navigation';
+@import 'partials/work';
 
 
 
 
 // ABOUT ****
 #about {
-	margin-bottom: 5.5rem;
+	margin-top: 10rem;
 	.bioContainer {
 		justify-content: space-between;
 		.bioText, .bioPhoto {
@@ -29,83 +30,74 @@
 	}
 }
 
+// CONTACT ****
 
-// WORK ****
-#work {
-	.galleryContainer {
-		position: relative;
-		height: 65vh;
-		.galleryItem {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			flex-direction: column;
-			justify-content: space-between;
-		}
-		.portfolioText {
-			align-self: left;
-			h3 {
-				font-family: "Gilda Display", serif;
-				font-size: 2.1rem;
-				letter-spacing: 0.2rem;
-				padding: 1rem 2rem;
-				margin: 1rem 0 0 0;
-			}
-			.portfolioTools {
-				margin: 0;
-				padding: 1rem 2rem;
-				font-family: $bodyFont;
-			}
-		}
-		.galleryImage_container {
-			max-width: 35%;
-			align-self: center;
-			position: absolute;
-			top: 15%;
-			img {
-				max-width: 100%;
-			}
-		}
-		.portfolioLinks {
-			align-self: left;
+#contact {
+	margin-top: 10rem;
+	.footerColumn {
+		width: 50%;
+		float: left;
+		padding: 10rem;
+		.socialContainer {
 			a {
-				text-decoration: none;
-				@include buttonStyle ($mainTextColour, 3px solid $mainTextColour);
-				padding: 1.5rem;
+				padding: 1rem;
 				transition: all 0.3s ease;
-				background: white;
-				&:hover {
-					background: #E6E9Ef;
-					color: white;
-					border: 3px solid white;
-					text-shadow: 1px 2px 0 $mainTextColour;
+				&:hover .fa {
+					color: red;
 				}
 			}
-		}
-		.memoryFlip {
-			background: #E6E9Ef;
-		}
-	}
-	.galleryScroll {
-		justify-content: space-between;
-			.leftScroller, .rightScroller {
-				padding: 2rem;
-				font-size: 1.8rem;
+			.fa {
+				font-size: 2.4rem;
+				color: $mainTextColour;
 			}
+
+		}
+	}
+	.formContainer {
+		background: #E2EEFF;
+	}
+
+form {
+	flex-direction: column;
+	justify-content: space-around;
+	width: 80%;
+	input:not(.submit), textarea {
+		width: 100%;
+		background: #E2EEFF;
+		border: none;
+		border-bottom: 3px solid $mainTextColour;
+		margin: 1rem 0;
+		padding: 1rem 0;
+		&::placeholder {
+			font-family: $bodyFont;
+			font-size: 1.4rem;
+			color: $mainTextColour;
+			}
+		}
+		textarea {
+			resize: none;
+		}
+
+	}
+
+	.visuallyHidden {
+		position: absolute;
+		clip: rect(1px 1px 1px 1px); 
+		clip: rect(1px, 1px, 1px, 1px);
+		clip-path: inset(50%);
+		padding: 0;
+		border: 0;
+		height: 1px;
+		width: 1px;
+		overflow: hidden;
 	}
 }
 
-.hidden {
-	visibility: hidden;
-	opacity: 0;
-	transition: visibility 0s linear 0.3s, opacity 0.3s;
+//FOOTER ****
+
+footer {
+	text-align: center;
+	@include navText (1.9rem, 500);
+	height: 5rem;
 }
-
-
-
-// .difinity, .councilMeet, .podChill {
-// 	visibility: hidden;
-// }
 

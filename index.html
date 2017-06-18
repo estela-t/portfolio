@@ -19,10 +19,10 @@
 				<ul class="flexContainer">
 					<li><a href="#about">About</a></li>
 					<li><a href="#work">Work</a></li>
-				</ul>
-				<div class="logo">I'm a logo</div>
-				<ul class="flexContainer">
-					<li><a href="#skills">Skills</a></li>
+				<!-- </ul> -->
+<!-- 				<div class="logo">I'm a logo</div> -->
+<!-- 				<ul class="flexContainer">
+					<li><a href="#skills">Skills</a></li> -->
 					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</nav>
@@ -64,14 +64,27 @@
 				<div class="galleryItem memoryFlip flexContainer">
 					<div class="portfolioText">
 						<h3>Memory Flip JS Game</h3>
-						<p class="portfolioTools">JavaScript, JQuery, HTML5, CSS3, SASS, Responsive Design</p>
+						<p class="portfolioTools">JavaScript, JQuery, HTML5, CSS3, SASS, CSS Illustration</p>
 					</div>
 					<div class="galleryImage_container">
 						<img src="public/assets/mockup2.png" alt="">
 					</div>
 					<div class="portfolioLinks">
-						<a href="">Live</a>
-						<a href="https://github.com/estela-t/to-memory-flip" target="_blank">GitHub</a>
+						<a href="" class="liveLink">Live</a>
+						<a href="https://github.com/estela-t/to-memory-flip" target="_blank" class="gitLink">GitHub</a>
+					</div>
+				</div>
+				<div class="galleryItem podChill flexContainer hidden">
+					<div class="portfolioText">
+						<h3>Pod & Chill</h3>
+						<p class="portfolioTools">External & Custom APIs, JavaScript, JQuery, HTML5, CSS3, SASS, Responsive Design</p>
+					</div>
+					<div class="galleryImage_container">
+						<img src="" alt="">
+					</div>
+					<div class="portfolioLinks">
+						<a href="" class="liveLink">Live</a>
+						<a href="" target="_blank" class="gitLink">GitHub</a>
 					</div>
 				</div>
 				<div class="galleryItem difinity flexContainer hidden">
@@ -83,21 +96,8 @@
 						<img src="" alt="">
 					</div>
 					<div class="portfolioLinks">
-						<a href="">Live</a>
-						<a href="" target="_blank">GitHub</a>
-					</div>
-				</div>
-				<div class="galleryItem podChill flexContainer hidden">
-					<div class="portfolioText">
-						<h3>Pod & Chill</h3>
-						<p class="portfolioTools">Custom API, External APIs, JavaScript, JQuery, HTML5, CSS3, SASS, Responsive Design</p>
-					</div>
-					<div class="galleryImage_container">
-						<img src="" alt="">
-					</div>
-					<div class="portfolioLinks">
-						<a href="">Live</a>
-						<a href="" target="_blank">GitHub</a>
+						<a href="" class="liveLink">Live</a>
+						<a href="" target="_blank" class="gitLink">GitHub</a>
 					</div>
 				</div>
 				<div class="galleryItem councilMeet flexContainer hidden">
@@ -109,8 +109,8 @@
 						<img src="" alt="">
 					</div>
 					<div class="portfolioLinks">
-						<a href="">Live</a>
-						<a href="" target="_blank">GitHub</a>
+						<a href="" class="liveLink">Live</a>
+						<a href="" target="_blank" class="gitLink">GitHub</a>
 					</div>
 				</div>
 			</div>
@@ -120,33 +120,46 @@
 			</div>
 		</div>
 	</section>
-	<section id="skills">
+	<!-- <section id="skills">
 		<div class="wrapper">
 			<h2>Skills</h2>
 			<div class="iconContainer">
 				
 			</div>
 		</div>
-	</section>
-	<section id="contact">
-		<h2>Contact</h2>
-		<div class="footerColumn">
-			<p>If you love my work as much as I loved making it</p>
-			<p>Get in touch.</p>
-			<p><i class="fa fa-paper-plane-o" aria-hidden="true"></i>estelathomson@me.com</p>
-			<div class="socialContainer">
-				<a href="https://twitter.com/estelatee" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-				<a href="https://www.instagram.com/estelatee/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-				<a href="https://www.linkedin.com/in/estela-thomson-b06704b4/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+	</section> -->
+	<section id="contact" class="clearfix">
+		<div class="wrapper">
+			<h2>Contact</h2>
+			<div class="footerColumn">
+				<p>If you like my work as much as I loved making it</p>
+				<p class="contactCallout">Get in touch.</p>
+				<p class="contactEmail"><i class="fa fa-paper-plane-o" aria-hidden="true"></i>estelathomson@me.com</p>
+				<div class="socialContainer">
+					<a href="https://twitter.com/estelatee" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+					<a href="https://www.instagram.com/estelatee/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+					<a href="https://www.linkedin.com/in/estela-thomson-b06704b4/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+				</div>
+			</div>
+			<div class="footerColumn formContainer">
+				<p>Or leave me a note.</p>
+				<form action="http://www.focuspocus.io/magic/estelathomson@me.com" method="POST" class="flexContainer">
+					<label for="name" class="visuallyHidden">Name</label>
+					<input type="text" name="name" placeholder="Name">
+
+					<label for="email" class="visuallyHidden">Email</label>
+					<input type="email" name="email" placeholder="Email">
+					
+					<label for="note" class="visuallyHidden">Note</label>
+					<textarea rows="5" col="5" name="note" placeholder="Note"></textarea>
+
+					<input type="submit" class="submit">
+				</form>
 			</div>
 		</div>
-<!-- 		<div class="footerColumn">
-			<p>Or leave me a note.</p>
-
-		</div> -->
 	</section>
 		<footer>
-			<p>&#169; Estela Thomson</p>
+			<p>&#169; 2017 Estela Thomson</p>
 		</footer>
 	</main>
 

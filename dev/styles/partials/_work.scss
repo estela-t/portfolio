@@ -1,0 +1,87 @@
+
+// WORK ****
+#work {
+	margin-top: 10rem;
+	.galleryContainer {
+		position: relative;
+		height: 65vh;
+		.galleryItem {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+		.portfolioText {
+			h3 {
+				font-family: "Gilda Display", serif;
+				font-size: 2.1rem;
+				letter-spacing: 0.2rem;
+				padding: 1rem 2rem;
+				margin: 1rem 0 0 0;
+			}
+			.portfolioTools {
+				margin: 0;
+				padding: 1rem 2rem;
+				font-family: $bodyFont;
+				font-size: 1.4rem;
+			}
+		}
+		.galleryImage_container {
+			width: 40%;
+			position: absolute;
+			left: 30%;
+			bottom: 5%;
+			img {
+				max-width: 100%;
+			}
+		}
+		.portfolioLinks {
+			text-align: right;
+			margin-bottom: 2.8rem;
+			display: inline-block;
+			a {
+				text-decoration: none;
+				@include buttonStyle ($mainTextColour, 3px solid $mainTextColour);
+				padding: 1.5rem;
+				transition: all 0.3s ease;
+				background: white;
+				margin: 0 1rem 0 0;
+				&:hover {
+					background: #E6E9Ef;
+					color: white;
+					border: 3px solid white;
+					text-shadow: 1px 2px 0 $mainTextColour;
+				}
+			}
+		}
+		.memoryFlip {
+			background: #E6E9Ef;
+		}
+		.podChill {
+			background: rgba(255,168,158, 0.4);
+		}
+		.difinity {
+			background: #F8F8F8;
+		}
+		.councilMeet {
+			background: rgba(107,203,228,0.5);
+		}
+	}
+	.galleryScroll {
+		justify-content: space-between;
+			.leftScroller, .rightScroller {
+				padding: 2rem;
+				font-size: 1.8rem;
+			}
+	}
+}
+
+.hidden {
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s linear 0.3s, opacity 0.3s;
+}
+
