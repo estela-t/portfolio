@@ -49,56 +49,7 @@ header {
 
 @media (max-width: 940px) {
 	header {
-		.heroContainer {
-			height: 65vh;
-			justify-content: center;
-			align-items: center;
-			background: linear-gradient(to bottom right, #FFEFE8 50%, #E2EEFF 50%);
-			margin-top: 10.1rem;
-			.heroText {
-				font-family: "Gilda Display", serif;
-				font-weight: 300;
-				font-size: 3rem;
-				padding: 12rem;
-			}
-		}
 		.leftPanel p, .rightPanel p {
-			padding: 0 1rem;
-			position: fixed;
-			top: 48vh;
-			text-align: center;
-			z-index: 10;
-			@include navText (1.2rem, 800);
-			}
-		.leftPanel p {
-			transform: rotate(-90deg);
-			left: 0%;
-		}
-		.rightPanel p {
-			transform: rotate(90deg);
-			right: -1%;
-		}
-	}
-
-}
-
-@media (max-width: 480px) {
-	header {
-		.heroContainer {
-			// height: 65vh;
-			// justify-content: center;
-			// align-items: center;
-			// background: linear-gradient(to bottom right, #FFEFE8 50%, #E2EEFF 50%);
-			// margin-top: 10.1rem;
-			.heroText {
-				// font-family: "Gilda Display", serif;
-				// font-weight: 300;
-				// font-size: 3rem;
-				padding: 3.5rem;
-			}
-		}
-		.leftPanel p, .rightPanel p {
-			display: none;
 			// padding: 0 1rem;
 			// position: fixed;
 			// top: 48vh;
@@ -106,6 +57,37 @@ header {
 			// z-index: 10;
 			// @include navText (1.2rem, 800);
 			}
+		.leftPanel p {
+			// transform: rotate(-90deg);
+			// left: 0%;
+		}
+		.rightPanel p {
+		// 	transform: rotate(90deg);
+		// 	right: -1%;
+		// }
 	}
+}
+}
 
+@media (max-width: 768px) {
+	header {
+		.heroContainer {
+			.heroText {
+				padding: 8rem;
+			}
+		}
+	}	
+}
+
+@media (max-width: 480px) {
+	header {
+		.heroContainer {
+			.heroText {
+				padding: 3.5rem;
+			}
+		}
+		.leftPanel p, .rightPanel p {
+			display: none;
+			}
+	}
 }

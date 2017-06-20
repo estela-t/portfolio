@@ -23,9 +23,9 @@
 			
 		</div>
 		<div class="wrapper ">
-			<div class="title">
-				<p>/TITLE on hidden nav/</p><!-- svg animation will go here -->
-			</div>
+			<!-- <div class="title"> -->
+				<!-- <p>/TITLE on hidden nav/</p>svg animation will go here -->
+			<!-- </div> -->
 			<div class="leftPanel">
 				<p>Web-Developer</p>
 			</div>
@@ -121,14 +121,6 @@
 			</div>
 		</div>
 	</section>
-	<!-- <section id="skills">
-		<div class="wrapper">
-			<h2>Skills</h2>
-			<div class="iconContainer">
-				
-			</div>
-		</div>
-	</section> -->
 	<section id="contact" class="clearfix">
 		<div class="wrapper">
 			<h2 class="wow fadeInRight">Contact</h2>
@@ -144,15 +136,15 @@
 			</div>
 			<div class="contactColumn formContainer">
 				<p>Or leave me a note ✌🏽</p>
-				<form action="http://www.focuspocus.io/magic/estelathomson@me.com" method="POST" class="flexContainer">
+				<form action="http://www.focuspocus.io/magic/estelathomson@me.com" method="POST" autocomplete="on" class="flexContainer">
 					<label for="name" class="visuallyHidden">Name</label>
-					<input type="text" name="name" placeholder="Name">
+					<input type="text" name="name" placeholder="Name" required >
 
 					<label for="email" class="visuallyHidden">Email</label>
-					<input type="email" name="email" placeholder="Email">
+					<input type="email" name="email" placeholder="Email" required>
 					
 					<label for="note" class="visuallyHidden">Note</label>
-					<textarea rows="5" col="5" name="note" placeholder="Note"></textarea>
+					<textarea rows="5" col="5" name="note" placeholder="Note" required autocomplete="off"></textarea>
 
 					<input type="submit" class="submit">
 				</form>

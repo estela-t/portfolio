@@ -61,6 +61,8 @@ form {
 		border-bottom: 3px solid $mainTextColour;
 		margin: 1rem 0;
 		padding: 1.2rem 0;
+		font-family: $bodyFont;
+		font-size: 1.4rem;
 		&::placeholder {
 			font-family: $bodyFont;
 			font-size: 1.4rem;
