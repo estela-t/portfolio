@@ -1,7 +1,7 @@
 
 $(function(){
 	// portfolio scroller
-	var panels = [".memoryFlip", ".podChill", ".difinity", ".councilMeet"];
+	var panels = [".memoryFlip", ".councilMeet", ".podChill", ".difinity"];
 	var currentPanel = 0;
 	var numOfPanels = panels.length;
 
@@ -35,14 +35,14 @@ $(function(){
 	});
 
 	// display nav items on scroll
-	$("window").scroll( function() {
-		if ($(this).scrollTop() > 200) {
-			$("#nav").fadeIn(500);
+	$(window).scroll( function() {
+		if ($(window).scrollTop() > 150) {
+			$("#nav").fadeIn(400);
 		} else {
-			$("#nav").fadeOut(500);
+			$("#nav").fadeOut(400);
 		}
+				
 	});
-
 });
 	// smooth scroll on anchor tags
 	$('a[href*="#"]:not([href="#"])').click(function() {

@@ -1,0 +1,84 @@
+
+// ABOUT ****
+#about {
+	margin-top: 10rem;
+	.bioContainer {
+		justify-content: space-between;
+		.bioText, .bioPhoto {
+			width: calc(50% - 5rem);
+		}
+		.bioPhoto img {
+			width: 100%;
+		}
+		.bioText {
+			margin-right: 5rem;
+			margin-top: 0;
+			@include bodyText;
+			&:first-line {
+				font-size: 2rem;
+				}
+				#catLink {
+					border-bottom: 3px solid #FFEFE8;
+					transition: all 0.3s ease;
+					&:hover {
+						transform: translateX(-5px);
+					}
+				}
+		}
+	}
+}
+// MEDIA QUERIES ****
+@media (max-width: 940px) {
+	#about {
+		.bioContainer {
+			.bioText, .bioPhoto {
+				width: calc(50% - 3rem);
+			}
+			.bioText {
+				margin-right: 3rem;
+			}
+		}
+	}
+}
+
+
+@media (max-width: 768px) {
+	#about {
+		.bioContainer {
+			.bioText, .bioPhoto {
+				width: calc(50% - 2.5rem);
+			}
+			.bioText {
+				margin-right: 2.5rem;
+			}
+		}
+	}
+}
+
+@media (max-width: 645px) {
+	#about {
+		.bioContainer {
+			flex-direction: column;
+			align-items: center;
+			.bioText, .bioPhoto {
+				width: 100%;
+			}
+			.bioPhoto img {
+				width: 90%;
+			}
+			.bioText {
+				margin-right: 0;
+				margin-bottom: 1.5rem;
+				margin-top: 0;
+			}
+		}
+	}
+
+}
+
+@media (max-width: 480px) {
+	#about {
+		margin-top: 2rem;
+	}
+}
+
