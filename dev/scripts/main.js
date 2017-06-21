@@ -42,9 +42,10 @@ $(function(){
 	// display nav items on scroll
 	$(window).scroll(function() {
 		if ($(window).scrollTop() > 150) {
+			$("#nav").css("visibility", "visible");
 			$("#nav").fadeIn(400);
 		} else {
-			$("#nav").fadeOut(400);
+			$("#nav").fadeOut(400,);
 		}
 				
 	});
