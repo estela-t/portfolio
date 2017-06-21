@@ -1,7 +1,7 @@
 
 // CONTACT ****
 
-#contact {
+.contact {
 	margin-top: 10rem;
 	.contactColumn {
 		width: 50%;
@@ -47,6 +47,10 @@
 		p {
 			@include headingText (1.8rem);
 			margin-bottom: 4rem;
+			img {
+				width: 25px;
+				height: 25px;
+			}
 		}
 	}
 
@@ -101,13 +105,21 @@ form {
 		width: 1px;
 		overflow: hidden;
 	}
+	.thankYou {
+		display: none;
+
+	}
+	#contact{
+		position: relative;
+		bottom: 10.1rem;
+	}
 }
 
 
 // MEDIA QUERIES ****
 
 @media (max-width: 940px) {
-	#contact {
+	.contact {
 		.contactColumn {
 			// background: #E2EEFF;
 			padding: 6rem;
@@ -117,7 +129,7 @@ form {
 }
 
 @media (max-width: 768px) {
-	#contact {
+	.contact {
 		.contactColumn {
 			float: none;
 			width: 80%;
@@ -128,7 +140,7 @@ form {
 
 
 @media (max-width: 480px) {
-	#contact {
+	.contact {
 		.contactColumn {
 			width: 90%;
 			padding: 4rem;
@@ -161,24 +173,10 @@ form {
 		input:not(.submit), textarea {
 			&::placeholder {
 				font-size: 1.6rem;
-				// line-height: 1rem;
-				// padding: 0.3rem;
-				}
-			&:focus {
-				// outline: none;
-				// border: 3px solid $mainTextColour;
-			}
 		}
 			.submit {
 				width: 60%;
-				// @include buttonStyle ($mainTextColour, 3px solid $mainTextColour);
-				// padding: 1.5rem;
-				// background: #E2EEFF;
-				// margin-top: 3rem;
-				// transition: all 0.3s ease;
-				// &:hover {
-				// 	background: white;
-				// }
 			}
 		}
+}
 }

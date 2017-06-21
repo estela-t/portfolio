@@ -2,10 +2,13 @@
 
 nav {
 	width: 90%;
-	// visibility: hidden;
+	visibility: hidden;
+	display: none;
 	background: white;
 	position: fixed;
-	z-index: 5;
+	left: 5%;
+	top: 0;
+	z-index: 10;
 	margin: 0 auto;
 	height: 10.1rem;
 	align-items: center;

@@ -1,6 +1,6 @@
 
 // WORK ****
-#work {
+.work {
 	margin-top: 10rem;
 	.galleryContainer {
 		position: relative;
@@ -39,6 +39,7 @@
 				max-width: 100%;
 			}
 		}
+
 		.portfolioLinks {
 			text-align: right;
 			margin-bottom: 2.8rem;
@@ -58,6 +59,8 @@
 				}
 			}
 		}
+
+
 		.memoryFlip {
 			background: #E6E9Ef;
 		}
@@ -79,6 +82,14 @@
 				cursor: pointer;
 			}
 	}
+	#work{
+		position: relative;
+		bottom: 10.1rem;
+	}
+}
+
+.macBook {
+	bottom: 15%;
 }
 
 .hidden {
@@ -90,7 +101,7 @@
 
 
 @media (max-width: 940px) {
-	#work {
+	.work {
 		.galleryContainer {
 			.galleryImage_container {
 				min-width: 40%;
@@ -100,7 +111,7 @@
 }
 
 @media (max-width: 768px) {
-	#work {
+	.work {
 		.galleryContainer {
 			.galleryImage_container {
 				min-width: 45%;
@@ -110,7 +121,7 @@
 }
 
 @media (max-width: 640px) {
-	#work {
+	.work {
 		.galleryContainer {
 			.galleryImage_container {
 				min-width: 50%;
@@ -121,7 +132,7 @@
 }
 
 @media (max-width: 480px) {
-	#work {
+	.work {
 		.galleryContainer {
 			.galleryImage_container {
 				min-width: 50%;

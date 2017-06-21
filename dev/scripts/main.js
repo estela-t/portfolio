@@ -34,8 +34,13 @@ $(function(){
 		updatePanel("previous");
 	});
 
+	$("form").on("submit", function (){
+		$(".submit").hide();
+		$(".thankYou").show();
+	});
+
 	// display nav items on scroll
-	$(window).scroll( function() {
+	$(window).scroll(function() {
 		if ($(window).scrollTop() > 150) {
 			$("#nav").fadeIn(400);
 		} else {
@@ -43,7 +48,6 @@ $(function(){
 		}
 				
 	});
-});
 	// smooth scroll on anchor tags
 	$('a[href*="#"]:not([href="#"])').click(function() {
 	  if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -59,7 +63,19 @@ $(function(){
 	});
 
 	// reveal headers on scroll
-	new WOW().init();
+	if ($(window).width() > 480 ){
+		new WOW().init();
+	}
+
+	// display modal
+	$("#catLink").on("click", function() {
+		$(".catImage").fadeIn(500);
+	});
+	// hide modal 
+	$(".closeBtn").on("click", function() {
+		$(".catImage").fadeOut(500);
+	});
+});
 
 
 

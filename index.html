@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>✨Estela T.</title>
+	<title>Estela T.</title>
 	<meta name="description" content="Estela is a front-end web developer based in Toronto. She's a University of Toronto and HackerYou alumn.">
+	<link rel="shortcut icon" href="public/assets/wave.png" type="image/x-icon" />
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Gilda+Display" rel="stylesheet">
 	<link rel="stylesheet" href="dev/styles/animate.css">
@@ -34,7 +35,7 @@
 			</div>
 			<div class="heroContainer flexContainer">
 				<div class="heroText">	
-					<p>Hi<span>👋🏽</span></p>
+					<p>Hi<img src="public/assets/wave.png"></p>
 					<p>I'm Estela, a front-end web developer based in Toronto.</p>
 				</div>
 			</div>
@@ -42,23 +43,28 @@
 	</header>
 
 	<main>
-
-	<section id="about">
+	<div id="about"></div>
+	<section class="about">
 		<div class="wrapper">
 			<h2 class="wow fadeInRight">About</h2>
 			<div class="bioContainer flexContainer">
 				<div class="bioText">
 					<p><span>I love tackling new coding challenges and the “aha!” moments when everything falls into place</span>. The collaborative nature of development, the playground for big and small ideas, and the endless opportunities for learning, are all things that have drawn me in. I’m excited to dive deeper into programming and continue to create front-end magic. I think that the internet should be available to everyone, and have a keen interest in expanding my knowledge of web accessibility and performance.</p> 
 					<p>When I’m not coding, I’m usually on a hiking trail or bingeing on the latest podcast.
-					I’m best friends with a chubby British Shorthair - <span id="catLink">she’s pretty great.</span></p>
+					I’m best friends with a chubby British Shorthair - <a id="catLink">she’s pretty great.</a></p>
 				</div>
 				<div class="bioPhoto">
 					<img src="public/assets/bio-photo.jpg" alt="">
 				</div>
+				<div class="catImage">
+					<img src="public/assets/aster.jpg" alt="picture of the best cat ever and her owner's hand, wearing matching friendship bracelets">
+					<i class="fa fa-times closeBtn" aria-hidden="true"></i>
+				</div>
 			</div>
 		</div>
 	</section>
-	<section class="gallery" id="work">
+	<div id="work"></div>
+	<section class="gallery work">
 		<div class="wrapper">
 			<h2 class="wow fadeInRight">Work</h2>
 			<div class="galleryContainer">
@@ -71,7 +77,7 @@
 						<img src="public/assets/mockup2.png" alt="iphone mockup of project">
 					</div>
 					<div class="portfolioLinks">
-						<a href="" target="_blank" class="liveLink">Live</a>
+						<a href="https://www.estelacodes.com/memory-flip" target="_blank" class="liveLink">Live</a>
 						<a href="https://github.com/estela-t/to-memory-flip" target="_blank" class="gitLink">GitHub</a>
 					</div>
 				</div>
@@ -80,8 +86,8 @@
 						<h3>City Council Meet Web Application</h3>
 						<p class="portfolioTools">React, Firebase, HTML5, CSS3, SASS, Responsive Design</p>
 						</div>
-					<div class="galleryImage_container">
-						<img src="public/assets/mockup-4.png" alt="mock up of a MacBook with project on the screen">
+					<div class="galleryImage_container macBook">
+						<img src="public/assets/mockup-4.png" alt="MacBook mockup of project">
 					</div>
 					<div class="portfolioLinks">
 						<a href="" class="liveLink">Live</a>
@@ -106,8 +112,8 @@
 						<h3>PSD to Responsive</h3>
 						<p class="portfolioTools">Responsive Design, HTML5, CSS3, SASS</p>
 					</div>
-					<div class="galleryImage_container">
-						<img src="" alt="">
+					<div class="galleryImage_container macBook">
+						<img src="public/assets/mockup5.png" alt="MacBook mockup of project">
 					</div>
 					<div class="portfolioLinks">
 						<a href="" class="liveLink">Live</a>
@@ -121,8 +127,9 @@
 			</div>
 		</div>
 	</section>
-	<section id="contact" class="clearfix">
-		<div class="wrapper">
+	<div id="contact"></div>
+	<section class="contact" class="clearfix">
+		<div class="wrapper clearfix">
 			<h2 class="wow fadeInRight">Contact</h2>
 			<div class="contactColumn contactColumnLeft">
 				<p>If you like my work as much as I loved making it</p>
@@ -135,7 +142,7 @@
 				</div>
 			</div>
 			<div class="contactColumn formContainer">
-				<p>Or leave me a note ✌🏽</p>
+				<p>Or leave me a note <img src="public/assets/peace.png"></p>
 				<form action="http://www.focuspocus.io/magic/estelathomson@me.com" method="POST" autocomplete="on" class="flexContainer">
 					<label for="name" class="visuallyHidden">Name</label>
 					<input type="text" name="name" placeholder="Name" required >
@@ -147,6 +154,7 @@
 					<textarea rows="5" col="5" name="note" placeholder="Note" required autocomplete="off"></textarea>
 
 					<input type="submit" class="submit">
+					<p class="thankYou">Thanks for your feedback!</p>
 				</form>
 			</div>
 		</div>

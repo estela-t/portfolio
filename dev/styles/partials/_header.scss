@@ -18,6 +18,11 @@ header {
 			font-weight: 300;
 			font-size: 3rem;
 			padding: 12rem;
+			img {
+				width: 30px;
+				height: 30px;
+				}
+			}
 		}
 	}
 	.leftPanel p, .rightPanel p {
@@ -36,7 +41,7 @@ header {
 		transform: rotate(90deg);
 		right: -1%;
 	}
-}
+
 
 
 .navWrapper {
@@ -47,25 +52,12 @@ header {
 
 // MEDIA QUERIES ****
 
-@media (max-width: 940px) {
+@media (max-width: 1196px) {
 	header {
 		.leftPanel p, .rightPanel p {
-			// padding: 0 1rem;
-			// position: fixed;
-			// top: 48vh;
-			// text-align: center;
-			// z-index: 10;
-			// @include navText (1.2rem, 800);
+			display: none;
 			}
-		.leftPanel p {
-			// transform: rotate(-90deg);
-			// left: 0%;
-		}
-		.rightPanel p {
-		// 	transform: rotate(90deg);
-		// 	right: -1%;
-		// }
-	}
+
 }
 }
 
