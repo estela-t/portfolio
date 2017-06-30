@@ -1,7 +1,7 @@
 
 $(function(){
 	// portfolio scroller
-	var panels = [".memoryFlip", ".councilMeet", ".podChill", ".difinity"];
+	var panels = [".memoryFlip", ".difinity", ".podChill", ".councilMeet"];
 	var currentPanel = 0;
 	var numOfPanels = panels.length;
 

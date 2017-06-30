@@ -24,7 +24,23 @@
 					transition: all 0.3s ease;
 					color: $mainTextColour;
 					&:hover {
-						transform: translateX(-5px);
+						padding-bottom: 0.5rem;
+					}
+				}
+				.resumeLink {
+					font-size: 1.6rem;
+					display: inline-block;
+					background: #FFEFE8;
+					padding: 1rem;
+					color: $mainTextColour;
+					transition: all 0.3s ease;
+					cursor: pointer;
+					&:hover {
+						background: #fff;
+						background: linear-gradient($mainTextColour 0%, $mainTextColour 100%);
+						background-size: 2px 2px;
+						background-repeat: repeat-x;
+						background-position: center center;
 					}
 				}
 		}
