@@ -19,6 +19,7 @@ $(function(){
 
 	$(".rightScroller").on("click", function () {
 		updatePanel("next");
+		$(".leftScroller").css("visibility", "visible");
 		// check to see if user is at the last panel 
 		// if they are, go back to the beginning of the array
 		if (currentPanel === numOfPanels){

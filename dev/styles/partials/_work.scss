@@ -28,6 +28,10 @@
 				padding: 1rem 2rem;
 				font-family: $bodyFont;
 				font-size: 1.4rem;
+				a {
+					border-bottom: 1px solid $mainTextColour;
+					color: $mainTextColour;
+				}
 			}
 		}
 		.galleryImage_container {
@@ -81,6 +85,12 @@
 				font-size: 2.2rem;
 				cursor: pointer;
 			}
+			.leftScroller {
+				visibility: hidden;
+			}
+			// .rightScroller  {
+			// 	align-self: right;
+			// }
 	}
 	#work{
 		position: relative;
