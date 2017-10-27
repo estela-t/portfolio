@@ -1,7 +1,7 @@
 
 $(function(){
 	// portfolio scroller
-	var panels = [".memoryFlip", ".difinity", ".podChill", ".councilMeet"];
+	var panels = [".memoryFlip", ".brightEarly", ".podChill", ".difinity", ".councilMeet"];
 	var currentPanel = 0;
 	var numOfPanels = panels.length;
 
@@ -48,8 +48,8 @@ $(function(){
 		} else {
 			$("#nav").fadeOut(400,);
 		}
-				
 	});
+	
 	// smooth scroll on anchor tags
 	$('a[href*="#"]:not([href="#"])').click(function() {
 	  if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {

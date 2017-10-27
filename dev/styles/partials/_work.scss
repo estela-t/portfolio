@@ -38,12 +38,14 @@
 			width: 35%;
 			position: absolute;
 			left: 30%;
-			bottom: 5%;
+			bottom: 10%;
 			img {
 				max-width: 100%;
 			}
 		}
-
+		.macBook {
+			width: 45%;
+		}
 		.portfolioLinks {
 			text-align: right;
 			margin-bottom: 2.8rem;
@@ -63,13 +65,14 @@
 				}
 			}
 		}
-
-
 		.memoryFlip {
 			background: #E6E9Ef;
 		}
+		.brightEarly {
+			background: rgba(245, 155, 150, 0.3);
+		}
 		.podChill {
-			background: rgba(255,168,158, 0.4);
+			background: rgba(255,206,158,0.5);
 		}
 		.difinity {
 			background: #F8F8F8;
@@ -97,11 +100,9 @@
 		bottom: 10.1rem;
 	}
 }
-
 .macBook {
 	bottom: 15%;
 }
-
 .hidden {
 	visibility: hidden;
 	opacity: 0;

@@ -21,6 +21,8 @@ header {
 			img {
 				width: 30px;
 				height: 30px;
+				animation: wave 0.7s;
+				animation-iteration-count: 5;
 				}
 			}
 		}
@@ -82,4 +84,12 @@ header {
 			display: none;
 			}
 	}
+}
+
+// ANIMATIONS
+
+@keyframes wave {
+	0%{transform: rotate(15deg);}
+	50%{transform: rotate(-10deg)}
+	100%{transform: rotate(15deg);}
 }
