@@ -17,13 +17,13 @@
 		.portfolioText {
 			h3 {
 				font-family: "Gilda Display", serif;
-				font-size: 2.1rem;
+				font-size: 2.2rem;
 				letter-spacing: 0.2rem;
 				padding: 1rem 2rem;
 				margin: 1rem 0 0 0;
 			}
 			.portfolioTools {
-				width: 40%;
+				width: 100%;
 				margin: 0;
 				padding: 1rem 2rem;
 				font-family: $bodyFont;
@@ -36,9 +36,8 @@
 		}
 		.galleryImage_container {
 			width: 35%;
-			position: absolute;
-			left: 30%;
-			bottom: 10%;
+			min-width: 35rem;
+			margin: 0 auto;
 			img {
 				max-width: 100%;
 			}
@@ -111,44 +110,18 @@
 
 
 
-@media (max-width: 940px) {
-	.work {
-		.galleryContainer {
-			.galleryImage_container {
-				min-width: 40%;
-			}
-		}
-	}
-}
-
-@media (max-width: 768px) {
-	.work {
-		.galleryContainer {
-			.galleryImage_container {
-				min-width: 45%;
-			}
-		}
-	}
-}
-
 @media (max-width: 640px) {
 	.work {
 		.galleryContainer {
 			.galleryImage_container {
-				min-width: 50%;
-				bottom: 12%;
+				min-width: 30rem;
+			}
+			.portfolioText {
+				.portfolioTools {
+					width: 60%;
+				}
 			}
 		}
 	}
 }
 
-@media (max-width: 480px) {
-	.work {
-		.galleryContainer {
-			.galleryImage_container {
-				min-width: 50%;
-				bottom: 25%;
-			}
-		}
-	}
-}

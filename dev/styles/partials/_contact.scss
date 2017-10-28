@@ -63,6 +63,7 @@ form {
 		background: #E2EEFF;
 		border: none;
 		border-bottom: 3px solid $mainTextColour;
+		border-top: 3px solid transparent;
 		margin: 1rem 0;
 		padding: 1.2rem 0;
 		font-family: $bodyFont;
@@ -117,11 +118,9 @@ form {
 
 
 // MEDIA QUERIES ****
-
 @media (max-width: 940px) {
 	.contact {
 		.contactColumn {
-			// background: #E2EEFF;
 			padding: 6rem;
 			
 		}
