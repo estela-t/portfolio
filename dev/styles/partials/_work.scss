@@ -35,7 +35,6 @@
 			}
 		}
 		.galleryImage_container {
-			min-width: 35rem;
 			margin: 0 auto;
 			img {
 				max-width: 100%;
@@ -43,9 +42,11 @@
 		}
 		.macBook {
 			width: 45%;
+			min-width: 35rem;
 		}
 		.iPhone {
 			width: 30%;
+			min-width: 33rem;
 		}
 		.portfolioLinks {
 			text-align: right;
