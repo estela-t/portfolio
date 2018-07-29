@@ -60,7 +60,7 @@ form {
 	width: 90%;
 	input:not(.submit), textarea {
 		width: 100%;
-		background: #E2EEFF;
+		background-color: #E2EEFF;
 		border: none;
 		border-bottom: 3px solid $mainTextColour;
 		border-top: 3px solid transparent;
@@ -77,7 +77,7 @@ form {
 			}
 		&:focus {
 			outline: none;
-			border: 3px solid $mainTextColour;
+			background-color: lighten(#E2EEFF, 30%);
 		}
 	}
 		textarea {
@@ -91,6 +91,10 @@ form {
 			margin-top: 3rem;
 			transition: all 0.3s ease;
 			&:hover {
+				background: white;
+			}
+			&:focus {
+				outline: none;
 				background: white;
 			}
 		}
